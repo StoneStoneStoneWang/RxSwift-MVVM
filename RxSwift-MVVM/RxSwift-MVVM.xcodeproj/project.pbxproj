@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		6C047B9922C6492F004D0538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C047B9822C6492F004D0538 /* Assets.xcassets */; };
 		6C047B9C22C6492F004D0538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C047B9A22C6492F004D0538 /* LaunchScreen.storyboard */; };
 		6C047BA622C6495F004D0538 /* WLReqApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C047BA522C6495F004D0538 /* WLReqApi.swift */; };
+		6C8D736122CAEE4500D273DE /* WLReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D736022CAEE4500D273DE /* WLReq.swift */; };
+		6C8D736322CAEF4200D273DE /* WLBaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D736222CAEF4200D273DE /* WLBaseBean.swift */; };
 		E913B99CE7BCE596324D9D93 /* Pods_RxSwift_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387C206809C511631CA3DE5E /* Pods_RxSwift_MVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		6C047B9B22C6492F004D0538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C047B9D22C6492F004D0538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C047BA522C6495F004D0538 /* WLReqApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReqApi.swift; sourceTree = "<group>"; };
+		6C8D736022CAEE4500D273DE /* WLReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLReq.swift; sourceTree = "<group>"; };
+		6C8D736222CAEF4200D273DE /* WLBaseBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBaseBean.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		6C047BA322C64951004D0538 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C8D735F22CAEE3500D273DE /* Req */,
 				6C047BA422C64951004D0538 /* Api */,
 			);
 			name = Code;
@@ -99,13 +104,21 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		6C8D735F22CAEE3500D273DE /* Req */ = {
+			isa = PBXGroup;
+			children = (
+				6C8D736022CAEE4500D273DE /* WLReq.swift */,
+				6C8D736222CAEF4200D273DE /* WLBaseBean.swift */,
+			);
+			path = Req;
+			sourceTree = "<group>";
+		};
 		E54D888038D8640D3AD8959B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				1D573989E1BC33EA58DAACE1 /* Pods-RxSwift-MVVM.debug.xcconfig */,
 				135AF88E01870CBA8A617932 /* Pods-RxSwift-MVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C047B9422C6492E004D0538 /* ViewController.swift in Sources */,
+				6C8D736122CAEE4500D273DE /* WLReq.swift in Sources */,
 				6C047BA622C6495F004D0538 /* WLReqApi.swift in Sources */,
 				6C047B9222C6492E004D0538 /* AppDelegate.swift in Sources */,
+				6C8D736322CAEF4200D273DE /* WLBaseBean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
